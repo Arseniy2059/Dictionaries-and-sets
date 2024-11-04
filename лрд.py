@@ -1,10 +1,18 @@
-x = input("my_string ")
-print(len("my_string"))
+pnone_book = {'Vasya': 1975, 'Egor': 1999, 'Masha': 2002}
+print(pnone_book)
 
-print("my_string".upper())
-print("my_string".lower())
-print("my _ str ing".replace(" ", ""))
+print(pnone_book['Masha'])
+print(pnone_book.get('Arseni'))
 
-a = "my_string"
-print(a[0])
-print(a[-1])
+pnone_book.update({'Kamila': 1981, 'Artem': 1915})
+print(pnone_book)
+
+a = pnone_book.pop('Egor')
+print(a)
+print(pnone_book)
+
+my_set = {1, 'Яблоко', 42.314, 1, 'Яблоко', 42.314}
+print(my_set)
+
+my_set.update((5, 6, 1.6))
+print(my_set)

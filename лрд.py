@@ -11,8 +11,10 @@ a = pnone_book.pop('Egor')
 print(a)
 print(pnone_book)
 
-my_set = {1, 'Яблоко', 42.314, 1, 'Яблоко', 42.314}
+my_set = {1, 'Яблоко', 42.314, 13, 1, 'Яблоко', 42.314, 13}
 print(my_set)
 
-my_set.update((5, 6, 1.6))
+my_set.update({(5, 6, 1.6), 'pear'})
+
+my_set.discard('pear')
 print(my_set)
